@@ -50,6 +50,7 @@ BOOL CFileTransferServerApp::InitInstance()
 	int ret;
 	ret=WSAStartup(MAKEWORD(2,2),&wsaData);
 	if (SOCKET_ERROR==ret){
+		//MessageBox("WSAStartup 错误");
 		return FALSE;
 	}
 	if ( LOBYTE( wsaData.wVersion ) != 2 ||//是取得16进制数最低（最右边）那个字节的内容

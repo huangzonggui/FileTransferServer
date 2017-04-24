@@ -19,7 +19,7 @@ class CFileTransferServerApp : public CWinApp
 {
 public:
 	CFileTransferServerApp();
-
+	~CFileTransferServerApp();
 // Overrides
 public:
 	virtual BOOL InitInstance();
